@@ -124,6 +124,7 @@ select {
     line-height: 18px;
     letter-spacing: 0.15px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .course-card-content-path-item>p:last-child {
@@ -135,4 +136,36 @@ select {
 
 .course-card-content-path-item:last-child {
     border-bottom: 1px solid #ECEDEC;
+}
+
+@media screen and (max-width: 1300px) {
+    .container_course {
+        padding: 70px 70px 30px 70px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container_course-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container_course {
+        padding: 50px 30px 30px 30px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container_course {
+        padding: 40px 20px 30px 20px;
+    }
+
+    .container_course-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container_course-heading-title {
+        font-size: 38px;
+    }
 }
